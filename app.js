@@ -21,7 +21,7 @@ function appMenu() {
       {
         type: "input",
         name: "managerName",
-        message: "What is your manager's name?",
+        message: "Manager's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -32,7 +32,7 @@ function appMenu() {
       {
         type: "input",
         name: "managerId",
-        message: "What is your manager's id?",
+        message: "Manager's id number?",
         validate: answer => {
           const pass = answer.match(
             /^[1-9]\d*$/
@@ -46,7 +46,7 @@ function appMenu() {
       {
         type: "input",
         name: "managerEmail",
-        message: "What is your manager's email?",
+        message: "Manager's email?",
         validate: answer => {
           const pass = answer.match(
             /\S+@\S+\.\S+/
@@ -60,7 +60,7 @@ function appMenu() {
       {
         type: "input",
         name: "managerOfficeNumber",
-        message: "What is your manager's office number?",
+        message: "Manager's office number?",
         validate: answer => {
           const pass = answer.match(
             /^[1-9]\d*$/
@@ -89,7 +89,7 @@ function appMenu() {
         choices: [
           "Engineer",
           "Intern",
-          "I don't want to add any more team members"
+          "No longer interested in adding more members."
         ]
       }
     ]).then(userChoice => {
@@ -111,7 +111,7 @@ function appMenu() {
       {
         type: "input",
         name: "engineerName",
-        message: "What is your engineer's name?",
+        message: "Engineer's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -122,7 +122,7 @@ function appMenu() {
       {
         type: "input",
         name: "engineerId",
-        message: "What is your engineer's id?",
+        message: "Engineer's id?",
         validate: answer => {
           const pass = answer.match(
             /^[1-9]\d*$/
@@ -141,7 +141,7 @@ function appMenu() {
       {
         type: "input",
         name: "engineerEmail",
-        message: "What is your engineer's email?",
+        message: "Engineer's email?",
         validate: answer => {
           const pass = answer.match(
             /\S+@\S+\.\S+/
@@ -155,7 +155,7 @@ function appMenu() {
       {
         type: "input",
         name: "engineerGithub",
-        message: "What is your engineer's GitHub username?",
+        message: "Engineer's GitHub username?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -176,7 +176,7 @@ function appMenu() {
       {
         type: "input",
         name: "internName",
-        message: "What is your intern's name?",
+        message: "Intern's name?",
         validate: answer => {
           if (answer !== "") {
             return true;
@@ -187,7 +187,7 @@ function appMenu() {
       {
         type: "input",
         name: "internId",
-        message: "What is your intern's id?",
+        message: "Intern's id?",
         validate: answer => {
           const pass = answer.match(
             /^[1-9]\d*$/
@@ -206,7 +206,7 @@ function appMenu() {
       {
         type: "input",
         name: "internEmail",
-        message: "What is your intern's email?",
+        message: "Intern's email?",
         validate: answer => {
           const pass = answer.match(
             /\S+@\S+\.\S+/
@@ -220,7 +220,7 @@ function appMenu() {
       {
         type: "input",
         name: "internSchool",
-        message: "What is your intern's school?",
+        message: "Intern's school?",
         validate: answer => {
           if (answer !== "") {
             return true;
